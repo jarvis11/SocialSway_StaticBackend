@@ -4,12 +4,20 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans:300' rel='stylesheet' type='text/css'>
+	<!--
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.css"/>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/origami.css"/>
 	<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
-	<link rel="stylesheet" type="text/css" href="css/style-purple.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style-purple.css"/> -->
+	<%=stylesheet_link_tag "font-awesome/font-awesome.css"%>
+	<%=stylesheet_link_tag "normalize"%>
+	<%=stylesheet_link_tag "style"%>
+	<%=stylesheet_link_tag "origami"%>
+	<%=stylesheet_link_tag "responsive"%>
+	<%=stylesheet_link_tag "style-purple"%>
+	
     <!--[if lte IE 7]>
   		<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome-ie7.min.css">
 	<![endif]-->
@@ -19,6 +27,7 @@
 	<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
+	<!--
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
@@ -27,7 +36,17 @@
     <script type="text/javascript" src="js/modernizr.js"></script>
 	<script type="text/javascript" src="js/responsive-nav.js"></script>
 	<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script> -->
+	<%=javascript_include_tag "jquery-1.9.1.min.js"%>
+	<%=javascript_include_tag "jquery.easing.js"%>
+	<%=javascript_include_tag "jquery-ui-1.10.3.custom.js"%>
+	<%=javascript_include_tag "jquery.cycle2.js"%>
+	<%=javascript_include_tag "origami.js"%>
+	<%=javascript_include_tag "responsive-nav.js"%>
+	<%=javascript_include_tag "jquery.lavalamp.min.js"%>
+	<%=javascript_include_tag "script.js"%>
+	
+	
 	<!--[if lt IE 9]>
 	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -42,7 +61,8 @@
 					<div class="grid_16">
 						<div class="md-logo">
 							<h1 class="rs"><a href="#">SocialSway</a></h1>
-							<img src="images/logo.png" alt="">
+							<%= image_tag("logo.png", alt: "SocialSway")%>
+							<!--<img src="images/logo.png" alt="">-->
 							<!--<span>Social. Healthcare. _________.</span>-->
 						</div>
 						<div class="arrow"></div>
@@ -63,7 +83,7 @@
 		
 		<div id="md-spotlight" class="md-spotlight">
 			<div class="md-pt-slide">
-				<img src="img/photo.jpg" alt="">
+				<%= image_tag("photo.jpg", alt: "There was supposed to be something here....")%>
 			</div>	
 			<div class="wrap1120">
 				<div class="grid_16">
@@ -73,7 +93,7 @@
 					</div>
 					<div class="md-review">
 						<div class="md-pt-review">
-							<img src="img/review.png" alt="">
+							<%= image_tag("review.png", alt: "")%>
 						</div>
 						<!--
 						<div class="md-icon-point-1 md-icon-dialog">
@@ -260,7 +280,7 @@
 							<div class="grid_6 ml135percent">
 								<h2 class="package">Bhaskar Ravi</h2>
 								<span class="pricing">Co-Founder<br><br></span>
-								<img src="images/BhaskarPicture.jpg" alt="">
+								<%= image_tag("BhaskarPicture.jpg", alt: "Bhaskar decided not to show up")%>
 								<ul class="rs feature">
 									<li><span class="bold"></span> Degree in Industrial Engineering and Management Sciences from Northwestern University, technology and innovation junkie, experience in predictive data analytics and structuring</li>
 								</ul>
@@ -269,7 +289,7 @@
 							<div class="grid_6">
 								<h2 class="package">David Paget</h2>
 								<span class="pricing">Co-Founder<br><br></span>
-								<img src="images/DavidPicture.jpg" alt="">
+								<%= image_tag("DavidPicture.jpg", alt: "Dave decided not to show up")%>
 								<ul class="rs feature">
 									<li><span class="bold"></span> MBA from Chicago Booth School of Business, former hedge fund executive, experience in statistical analysis and mathematics</li>
 								</ul>
