@@ -400,7 +400,7 @@ p.md-description {
     height: 60px;
 }
 .md-navbar.nav-fix .md-logo span {display: none;}
-.md-navbar.nav-fix .md-logo {top: 14px;} /* TOP ORIGINALLY 14PX */
+.md-navbar.nav-fix .md-logo {top: 17px;} /* TOP ORIGINALLY 14PX */
 .md-navbar.nav-fix .md-logo h1 {
     background: url('/assets/logo-fix.png') no-repeat 0 0 ;
 }
@@ -757,6 +757,44 @@ h2.title-list {
     text-transform: uppercase;
 }
 .pricing-table .btn-color.btn-green:hover,.pricing-table .btn-color.btn-orange:hover,.pricing-table .btn-color.btn-blue:hover {background: none;}
+
+
+/* Team */
+.md-team .md-box {
+    padding: 75px 0 70px;
+}
+.team-table {margin-top: 60px;}
+.team-table .grid_6 {
+    background: #F4F4F4;
+}
+.package {
+    font-size: 20px;
+    font-weight: bold;
+    color:#262626;
+    text-transform: uppercase;
+    margin: 30px 0 15px;
+}
+.feature {text-align: left;border-top: 1px solid #FFF; border-bottom: 1px solid #FFF;padding: 20px; margin: 23px 0;}
+.feature li {margin-bottom: 20px;}
+.team,.feature li,.feature span.bold {
+    font-size:16px;
+    color: #999999;
+	text-align: center;
+
+}
+.feature span.bold {
+    color: #777FE9;
+	font-size:18px;
+}
+.team-table .btn {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom:20px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+.team-table .btn-color.btn-green:hover,.team-table .btn-color.btn-orange:hover,.team-table .btn-color.btn-blue:hover {background: none;}
+
 
 /* PARALLAX-3 */
 .md-parallax-3 .md-box {
