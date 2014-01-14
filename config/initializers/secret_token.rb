@@ -26,4 +26,4 @@ def secure_token
   end
 end
 
-SocialSwayTimemachine::Application.config.secret_key_base = secure_token
+SocialSwayStaticBackend::Application.config.secret_key_base = secure_token
